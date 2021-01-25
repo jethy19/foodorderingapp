@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@android:color/holo_blue_light"
+        android:text="Choose the restaurant you want to order from" />
+
+    <ImageButton
+        android:id="@+id/mainlandimage"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/mainlandchina"/>
+
+    <TextView
+        android:id="@+id/mainlandtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:onClick="mainlandchina"
+        android:text="Mainland China"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/tagerine9image"
+        android:layout_width="wrap_content"
+        android:layout_height="612dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/hotel" />
+
+    <TextView
+        android:id="@+id/tagerine9text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:textSize="30sp"
+        android:onClick="tangerine9"
+        android:text="Tangerine9" />
+
+    <ImageButton
+        android:id="@+id/thetreatimage"
+        android:layout_width="391dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/thetreat" />
+
+    <TextView
+        android:id="@+id/thetreattext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:textSize="30sp"
+        android:onClick="thetreat"
+        android:text="The Treat" />
+
+    <ImageButton
+        android:id="@+id/mauryagardenimage"
+        android:layout_width="wrap_content"
+        android:layout_height="527dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/mauryagarden" />
+
+    <TextView
+        android:id="@+id/mauryagardentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="30dp"
+        android:onClick="mauryagarden"
+        android:text="Maurya Garden"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/goldenbirdimage"
+        android:layout_width="wrap_content"
+        android:layout_height="527dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/goldenbird" />
+
+    <TextView
+        android:id="@+id/goldenbirdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:textSize="30sp"
+        android:onClick="goldenbird"
+        android:text="Golden Bird" />
+
+
+
+</LinearLayout>
+</ScrollView>

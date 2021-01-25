@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tangerine9">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    tools:context=".tangerine9">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="cursive"
+        android:layout_marginLeft="20dp"
+        android:text="WELCOME TO TANGERINE9"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/RicecheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Rice (Rs 50 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quanttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/morebutton"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/numtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/lessbutton"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbiriyanicheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Chicken Biriyani (Rs 150 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more1button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment1"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less1button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement1"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/vricecheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Veg Fried Rice(Rs 60 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more2button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment2"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less2button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement2"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/naancheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Naan(Rs 30 per piece)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant3text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more3button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment3"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num3text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less3button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement3"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/roticheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Roti(Rs 20 per piece)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant4text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more4button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment4"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num4text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less4button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement4"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/kulchacheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Kulcha(Rs 40 per piece)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant5text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more5button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment5"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num5text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less5button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement5"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/bchickencheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Butter Chicken(Rs 160 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant6text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more6button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment6"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num6text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less6button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement6"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/schickencheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Spicy Chicken Masala(Rs 150 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant7text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more7button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment7"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num7text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less7button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement7"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/kchickencheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Kadai Chicken(Rs 170 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant8text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more8button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment8"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num8text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less8button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement8"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/mkoftacheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Mutton Kofta(Rs 200 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant9text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more9button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment9"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num9text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less9button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement9"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/bpaneercheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Paneer Butter Masala(Rs 150 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant10text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more10button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment10"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num10text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less10button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement10"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/ppaneercheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Palak Paneer(Rs 170 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant11text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more11button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment11"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num11text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less11button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement11"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/kpaneercheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Kadai Paneer(Rs 180 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant12text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more12button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment12"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num12text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less12button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement12"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/spaneercheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textSize="23sp"
+        android:text="Sahi Paneer(Rs 180 per plate)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quant13text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/more13button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment13"
+            android:text="+"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num13text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/less13button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="decrement13"
+            android:text="-"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/orderbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:onClick="order"
+        android:text="Click here to view Order Summary" />
+
+
+</LinearLayout>
+    </ScrollView>
+
